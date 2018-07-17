@@ -1,0 +1,190 @@
+\documentclass[12pt]{beamer}
+%\documentclass[handout]{beamer}
+
+%compile with:
+%pdflatex beamerosutemplate.tex
+%bibtex beamerosutemplate
+%pdflatex beamerosutemplate.tex
+%pdflatex beamerosutemplate.tex
+
+% Setup appearance:
+\usepackage{color}
+\usetheme{OSU}
+\setbeamertemplate{navigation symbols}{}
+\mode<handout>{\setbeamercolor{background canvas}{bg=black!5}}
+
+% Standard packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{fancybox}
+\usepackage{multimedia}
+
+% Author, Title, etc.
+
+\title[Background Mesh]{A Background Mesh Approach to Fluid-Structure
+  Interaction Using PFEM}
+\author[M.Z.]{Minjie Zhu}
+\institute[OSU]{Civil \& Construction Engineering
+  \begin{center}
+    %\includegraphics[scale=0.1]{osu.pdf}
+  \end{center}
+}
+\date[WCCM 2018]
+  {The 13th World Congress in Computational Mechanics\\   
+    \today
+  }
+ 
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%Show outline at beginning of each section:
+%\AtBeginSection[]{
+%  \begin{frame}{Outline}
+%  \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+\begin{frame}{Outline}
+  \tableofcontents%[pausesections]
+\end{frame}
+
+\section[Short Section 1]{Section 1 Long Name}
+
+\subsection[Short Subsection]{Subsection Long Name}
+
+\begin{frame}{Frame Title}
+  \begin{minipage}{.45\textwidth}
+    \begin{itemize}
+    \item Example
+    \item of a
+    \item List
+    \end{itemize}
+  \end{minipage}
+  \fbox{
+    \begin{minipage}{.45\textwidth}
+      \begin{enumerate}
+      \item Example
+      \item of a
+      \item Numbered List
+      \item in a Box
+      \end{enumerate}
+    \end{minipage}
+  }
+\end{frame}
+
+\subsection[Short Subsection 2]{Subsection 2 Long Name}
+
+\begin{frame}{Frame 2 Title}
+\begin{definition}An \alert{word} has a {\em meaning}.
+\end{definition}
+\begin{equation*}
+\min_{d\in D} \left\| d^d \right\|.
+\end{equation*}
+
+\end{frame}
+
+ 
+% \section{Maxwell's Equations}
+
+% \begin{frame}{Maxwell's Equations}
+%   \begin{center}
+%     \fbox{
+%       \begin{minipage}{0.5\textwidth}
+% 	\begin{alignat*}{2}
+% 	\frac{\partial \mathbf{D}}{\partial t}+\mathbf{J}&=\nabla \times \mathbf{H}
+% 	\quad &(\text{Ampere})\\ 
+% 	\frac{\partial\mathbf{B}}{\partial t} &=-\nabla \times\mathbf{E}
+% 	\quad &(\text{Faraday}) \\  
+% 	\nabla \cdot \mathbf{D}&= \rho 
+% 	\quad &(\text{Poisson}) \\
+% 	\nabla \cdot \mathbf{B} &= 0 
+% 	\quad &(\text{Gauss})
+% 	\end{alignat*}
+%       \end{minipage}
+%     }
+%   \end{center}
+% \begin{minipage}[t]{0.5\textwidth}
+% \noindent
+% \centering
+% \begin{align*}
+% \mathbf{E} & = \quad \text{\textcolor{blue}{Electric field vector}}\\
+% \mathbf{H} & =  \quad \text{\textcolor{blue}{Magnetic field vector}}\\
+% \rho & =  \quad \text{\textcolor{blue}{Electric charge density}}
+% \end{align*}
+% \end{minipage}
+% \begin{minipage}[t]{0.5\textwidth}
+% \noindent
+% \centering
+% \begin{align*}
+% \mathbf{D} &= \quad \text{\textcolor{blue}{Electric displacement}}\\ 
+% \mathbf{B} &= \quad \text{\textcolor{blue}{Magnetic flux density}}\\
+% \mathbf{J} &= \quad \text{\textcolor{blue}{Current density}}\\
+% \end{align*}
+% \end{minipage}
+
+% These are often referred to as the {\textcolor{magenta}{curl equations}}.
+
+% \end{frame}
+
+
+
+
+% \subsection{Numerical Stability and Dispersion}
+
+% \begin{frame}{Numerical Stability: A Square Wave}
+%   \begin{itemize}
+%   \item Case $c\Delta t = \Delta x$
+%     \begin{minipage}{.7\textwidth}
+%       \includegraphics[scale = 0.43]{fig5-3.pdf}
+%     \end{minipage}
+%   \item Case $c\Delta t > \Delta x$ 
+%     \begin{minipage}{.7\textwidth}
+%       \includegraphics[scale = 0.43]{fig5-5.pdf}
+%     \end{minipage}
+%   \end{itemize}
+% \end{frame}
+
+
+% \subsection{Movie}
+% \begin{frame}{Gap Detection}
+%   Dielectric slab with gap in front of metallic backing
+%   \begin{center}
+%     \movie[width=8cm,height=6cm,poster,repeat]{}{example2.avi}
+%   \end{center}
+%   Note the absorbing boundary conditions on the left.
+% \end{frame}
+
+
+% \section*{Unlisted Section}
+   
+%    \begin{frame}{Open Questions}
+%      \begin{itemize}
+%        \item<1-> How to write a talk
+% 	 \begin{itemize}
+% 	   \item How to write a good talk
+% 	   \item How to write it fast
+% 	 \end{itemize}
+%        \item<2-> How to give a good talk
+%      \end{itemize}
+%    \end{frame}
+
+% \nocite{xiu2003wap,winters2006efd,abenius2006}
+
+% \section*{References}
+% \bibliographystyle{alpha}
+% \bibliography{biblio}
+
+
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
